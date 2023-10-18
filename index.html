@@ -1,36 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" href="images/15X15.png" type="image/x-icon" />
     <title>Simple rock paper game | David chilanzi jilliam</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <h1>ROCK || PAPER || SCISSORS</h1>
+  <body class="bg-myBackground font-poppins">
+    <header class="h-16 lg:h-28 flex justify-center items-center bg-myDarkest">
+      <h1 class="text-myLightGreen font-black text-2xl lg:text-8xl">
+        ROCK || PAPER || SCISSORS
+      </h1>
     </header>
-    <main>
-        <div id="message">
-            <p id="winner"></p>
-          <dl>
-            <dt>Player Score</dt>
-            <dd id="player">0</dd>
-             <dt>Computer Score</dt>
-            <dd id="Computer">0</dd>
-          </dl>
-          <p id="declaration"></p>
-        </div>
+    <main class="flex flex-col justify-center items-center">
+      <div id="first" class="">
+        <h2>Normal Score</h2>
+        <p id="player">0</p>
+      </div>
+
+      <div id="middle">
+       
+        <p id="winner">decide If its everyone fault or take responsibility</p>
+ <p id="declaration"></p>
         <div id="buttons">
-            <button value="Rock"><img src="images/rock.png" alt="Rock" data-value="Rock" ><p data-value="Rock">Rock</p></button><button><img src="images/paper.png" alt="paper" data-value="Paper"><p data-value="Paper">Paper</p></button><button value="Scissors"><img src="images/scissors.png" alt="scissors" data-value="Scissors"><p data-value="Scissors">Scissors</p></button>
+          <button value="Rock" >
+            <img src="images/rock.png" alt="Rock" data-value="Rock" />
+            <p data-value="Rock">Rock</p></button
+          >
+          <button value="Paper">
+            <img src="images/paper.png" alt="paper" data-value="Paper" />
+            <p data-value="Paper">Paper</p></button
+          >
+          <button value="Scissors">
+            <img
+              src="images/scissors.png"
+              alt="scissors"
+              data-value="Scissors"
+            />
+            <p data-value="Scissors">Scissors</p>
+          </button>
         </div>
+      </div>
+
+      <div id="last">
+        <h2>Toxicity Score</h2>
+        <p id="Computer">0</p>
+      </div>
     </main>
     <footer>
-        <p><small>&copy; 2023 Developed and Designed by <a href="#">Arbit Design</a></small></p>
+      <p>
+        <small
+          >&copy; 2023 Developed and Designed by
+          <a href="#">Arbit Design</a></small
+        >
+      </p>
     </footer>
-</body>
-<script src="Script.js">
-    </script>
+  </body>
+  <script src="Script.js"></script>
 </html>
