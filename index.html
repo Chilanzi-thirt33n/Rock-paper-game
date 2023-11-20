@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" href="images/15X15.png" type="image/x-icon" />
     <title>Introduction to toxic-tony | Chilanzi Sensenta </title>
 </head>
-<body>
-    <header>
-<h1>TOXIC TONY GAME</h1>
+<body class="bg-myBackground h-screen w-screen flex flex-col justify-between items-center">
+    <header class="lg:bg-myDarkest w-screen h-[98px] flex flex-row justify-center items-center">
+<h1 class="font-poppins text-myLightGreen text-[24px] lg:text-[100px]">TOXIC TONY GAME</h1>
     </header>
-    <main>
-<h2><img src="" alt="">#ToxicTonyRules<img src="" alt=""></h2>
+    <main class="bg-white rounded-xl m-3 flex flex-col justify-around items-center h-3/4 lg:h-2/3 p-3 lg:w-4/6">
+        <div>
+            <h2 class="flex flex-row flex-nowrap justify-center items-center font-poppins text-lg mt-6"><img src="images/controller.png" alt="controller" class="w-[50px] h-[50px] mx-2">#ToxicTonyRules<img src="images/controller.png" alt="controller" class="w-[50px] h-[50px] mx-2"></h2>
 
-<div>
+    <audio controls autoplay loop>
+        <source src="Audio/" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+        </div>
+
+
+<div class="font-sansita text-center flex flex-col flex-nowrap gap-3 lg:w-[60%]">
     <p> Are you as cool as ice or as fiery as flames? It's time to find out in this unique twist on Rock, Paper, Scissors!</p>
 
 <p>Welcome to the battle of wits! Face off against the CPU in five thrilling rounds to determine just how toxic you are as an individual. Win, and you'll prove your zen-like calmness. Lose, and you might discover some hidden fiery tendencies.</p>
